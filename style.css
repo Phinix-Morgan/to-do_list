@@ -1,0 +1,107 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+h4{
+  text-align: center;
+}
+h5{
+  margin-top: 20px;
+  text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#btnu{
+  width: 90px;
+    background-color: royalblue;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    
+}
+button.btn-delete {
+    width: 90px;
+    background-color: rgb(65 105 225);
+    border: none;
+    color: rgb(255 255 255);
+    border-radius: 2px;
+}
+#title{
+  width: 350px;
+    border-radius: 3px;
+border: solid black 1px;
+}
+#des{
+width: 350px;
+margin-top:7px;
+    border-radius: 3px;
+    border: solid black 1px;
+}
+#btnu:hover{
+  opacity: 0.5;
+}
+.table{
+  
+}
+
+
+
+
+
+
+
+
+
+/*
+const btnx =  document.querySelector("#btnu");
+btnx.addEventListener("click",() => {
+  var title = document.querySelector("#title").value;
+  var des = document.querySelector("#des").value;
+  if(localStorage.getItem('itemsJson')==null){
+    itemJsonArray = [];
+    itemJsonArray.push([title,des]);
+    localStorage.setItem('itemsJson',JSON.stringify(itemJsonArray))
+
+  }
+  else{
+    itemJsonArraystr = localStorage.getItem('itemsJson')
+    itemJsonArray = JSON.parse(itemJsonArraystr);
+    itemJsonArray.push([title,des]);
+    localStorage.setItem('itemsJson',JSON.stringify(itemJsonArray))
+  }
+
+      //populate the Table
+      let tableBody = document.querySelector("#tableBody");
+      let str = "";
+      itemJsonArray.forEach((element,index) => {
+        str += `<tr>
+            <th scope="row">${index +1 }</th>
+            <td>${element[0]}</td>
+            <td>${element[1]}</td>
+            <td> <button id="btn" onclick = "Delete(${index})">Delete</button> </td>
+          </tr>`;
+      });
+ tableBody.innerHTML = str;
+ update();
+
+});
+
+const Delete = (itemIndex) => {
+console.log("Delete",itemIndex);
+  itemJsonArraystr = localStorage.getItem('itemsJson')
+    itemJsonArray = JSON.parse(itemJsonArraystr);
+//delete itemIndex element from the array
+
+itemJsonArray.splice(itemIndex,1);
+    localStorage.setItem('itemsJson',JSON.stringify(itemJsonArray));
+    update();
+};
+*/
+
+
+
